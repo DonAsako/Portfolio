@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasako - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#Home">
+                <img class="navbar-logo" src="img/logo.svg" alt="DonAsako's logo">
+            </a>
+            
+            <ul class="navbar-items">
+                <li class="navbar-item">
+                    <a href="#technologies" class="navbar-item--link">Technologies</a>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <a href="#projects" class="navbar-item--link dropdown-label">Projects<span class="dropdown-arrow"></span></span>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-items">
+                                <li class="dropdown-item">
+                                    <a href="https://github.com/DonAsako/NiChaudNiFroid" target="_blank" class="dropdown-item--link">NiChaudNiFroid</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="dropdown-item--link" target="_blank" href="https://github.com/DonAsako/AsBal">AsBal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                    
+                </li>
+                
+                <li class="navbar-item">
+                    <a href="#contact" class="navbar-item--link">Contact</a>
+                </li>   
+            </ul>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <section class="section technologies" id="technologies">
+            <h2 class="section-title">
+                Technologies
+            </h2>
+            <div class="section-body">
+                
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <h2 class="section-title">
+                Projects
+            </h2>
+            <div class="section-body">
+                <div class="card">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section-title">
+                Contact
+            </h2>
+            <div class="section-body">
+                <form action="POST" class="form-contact">
+                    <p class="input-field">
+                        <label for="email" class="input-field--label">Email : </label>
+                        <input type="email" name="email" id="email" placeholder="foo@foo.com" required class="input-field--input">
+                    </p>
+
+                    <p class="input-field">
+                        <label for="mission" class="input-field--label">Mission : </label>
+                        <select name="mission" id="mission" required class="input-field--input form-contact--select">
+                            <option value="">Aucun</option>
+                            <option value="simple">Site simple</option>
+                            <option value="complex">Site complexe</option>
+                            <option value="idk">Je ne sais pas</option>
+                        </select>
+                    </p>
+                    
+                    <p class="input-field">
+                        <textarea name="" id="" required class="input-field--input form-contact--textarea" placeholder="..."></textarea>
+                    </p>
+
+                    <p class="input-field">
+                        <input type="submit" value="Envoyer" class="input-field--input form-contact--submit">
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+</html>
