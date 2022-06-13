@@ -137,6 +137,65 @@ h1, h2, h3, h4, h5, p, a, input, option, textarea, select {
     width: 80%;
 }
 
+.card {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2em;
+}
+
+.card-banner {
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+    display: flex;
+}
+
+.card-banner--image {
+    width: 100%;
+    align-self: center;
+}
+
+.card-infos {
+    padding: .5em;
+}
+
+.card-title {
+    font-weight: 500;
+    color: var(--font-color);
+}
+.card-title::after {
+    display: block;
+    content: " ";
+    margin: .5em 0;
+    height: 2px;
+    background-color: var(--font-color);
+}
+.card-description {
+}
+.card-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-bottom: .5em;
+}
+
+.card-link--icon {
+    margin: 1em;
+    color: var(--font-color);
+    font-size: 1.5em;
+
+}
+.card-link--icon:hover {
+    opacity: .8;
+}
+.card-description::after{
+    display: block;
+    content: " ";
+    margin: .5em 0;
+    height: 2px;
+    background-color: var(--font-color);
+}
 .form-contact {
     width: 100%;
 }
